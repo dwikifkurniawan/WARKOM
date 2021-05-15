@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- icon -->
+    <link href="templates/img/logoatas.png" rel="icon">
+
+    <!-- css -->
+    <link rel="stylesheet" href="templates/css/bootstrap.min.css">
+    <link rel="stylesheet" href="templates/css/style.css">
+
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="templates/js/bootstrap.min.js"></script>
+
+    <title>Warkom</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header" class="header fixed-top shadow p-3 mb-5 rounded">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+            <a href="index.php" class="logo d-flex align-items-center">
+              <img src="templates/img/logo.png" alt="">
+            </a>
+      
+            <nav id="navbar" class="navbar">
+              <ul>
+                <li><a class="nav-link scrollto" href="user.php">User</a></li>
+                <li><a class="nav-link scrollto" href="produk.php">Produk</a></li>
+                <!-- <li><a class="nav-link scrollto" href="kategoriadmin.php">Kategori</a></li> -->
+                <li><a class="nav-link scrollto" href="adminpembelian.php">Pembelian</a></li>
+                <li><a class="nav-link scrollto">
+                  <form method="post" action="search.php" class="d-flex">
+                    <input class="form-control me-2" type="search" name="search" placeholder="Search" aria-label="Search">
+                    <input class="btn btn-outline-success" type="submit" value="Search"/>
+                  </form>
+                </a></li>
+                <li><a class="nav-link scrollto" href="logout.php">Logout</a></li>
+                <li>
+                  DATA_LOGIN
+                  <!-- <a class="nav-link scrollto" href="login.php"><img src="templates/img/login.png" alt="" width="80%" height="80%"></a> -->
+                </li>
+              </ul>
+              <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
+      
+        </div>
+    </header>
+    <!-- Header -->
+
+    <!-- ======= Main Section ======= -->
+    <section id="main" class="main">
+
+        <!-- Featured Gear -->
+        <div class="container" data-aos="fade-up">
+
+            <header class="section-header2">
+              <br>
+              <h2>Holla Admin</h2>
+              <br>
+              <br>  
+            </header>
+    
+            <div class="row gy-4" data-aos="fade-left">
+    
+              <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+                <a href="user.php">
+                  <div class="box">
+                    <img src="templates/img/user.png" class="img-fluid crop" alt="">
+                    <div class="price">User</div>
+                    <a href="user.php" class="btn-buy">Atur User</a>
+                  </div>
+                </a>
+              </div>
+    
+              <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+                <a href="produk.php">
+                  <div class="box">
+                    <img src="templates/img/produk.png" class="img-fluid crop" alt="">
+                    <div class="price">Produk</div>
+                    <a href="produk.php" class="btn-buy">Atur Produk</a>
+                  </div>
+                </a>
+              </div>
+    
+              <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+                <a href="adminpembelian.php">
+                  <div class="box">
+                    <img src="templates/img/pembelian.png" class="img-fluid crop" alt="">
+                    <div class="price">Pembelian</div>
+                    <a href="adminpembelian.php" class="btn-buy">Atur Pembelian</a>
+                  </div>
+                </a>
+              </div>
+    
+            </div>
+    
+        </div>
+  
+    </section><!-- End main Section -->
+  
+      <section id="footer1" class="footer1"  style="position: fixed; bottom: 0; width: 100%;">
+        <div class="container container-fluid">
+          <div class="container">
+            <p>Copyright &copy; 2021. All Rights Reserved.</p>
+          </div>
+        </div>
+      </section>
+
+    
+</body>

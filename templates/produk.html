@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- icon -->
+    <link href="templates/img/logoatas.png" rel="icon">
+
+    <!-- css -->
+    <link rel="stylesheet" href="templates/css/bootstrap.min.css">
+    <link rel="stylesheet" href="templates/css/style.css">
+
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="templates/js/bootstrap.min.js"></script>
+
+    <title>Warkom</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header" class="header fixed-top shadow p-3 mb-5 rounded">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+            <a href="index.php" class="logo d-flex align-items-center">
+              <img src="templates/img/logo.png" alt="">
+            </a>
+      
+            <nav id="navbar" class="navbar">
+              <ul>
+                <li><a class="nav-link scrollto" href="user.php">User</a></li>
+                <li><a class="nav-link scrollto" href="produk.php">Produk</a></li>
+                <!-- <li><a class="nav-link scrollto" href="kategoriadmin.php">Kategori</a></li> -->
+                <li><a class="nav-link scrollto" href="adminpembelian.php">Pembelian</a></li>
+                <li><a class="nav-link scrollto">
+                  <form method="post" action="search.php" class="d-flex">
+                    <input class="form-control me-2" type="search" name="search" placeholder="Search" aria-label="Search">
+                    <input class="btn btn-outline-success" type="submit" value="Search"/>
+                  </form>
+                </a></li>
+                <li><a class="nav-link scrollto" href="logout.php">Logout</a></li>
+                <li>
+                  DATA_LOGIN
+                  <!-- <a class="nav-link scrollto" href="login.php"><img src="templates/img/login.png" alt="" width="80%" height="80%"></a> -->
+                </li>
+              </ul>
+              <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
+      
+        </div>
+    </header>
+    <!-- Header -->
+
+    <!-- ======= Main Section ======= -->
+    <section id="main" class="main">
+
+        <div class="container" data-aos="fade-up">
+
+            <header class="section-header2">
+              <br>
+              <h2>Holla Admin</h2>
+            </header>
+    
+            <div class="col">
+                <form action="insproduk.php" method="post" enctype="multipart/form-data">
+                    <!-- <h2 style="color: #BBE1FA;"></h2> -->
+                    <div class="mb-3" style="width: 40%;">
+                        <label for="exampleInputEmail1" class="form-label" style="color: #BBE1FA;">Nama Produk</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="nama" required>
+                    </div>
+                    <div class="mb-3" style="width: 40%;">
+                        <label for="exampleInputEmail1" class="form-label" style="color: #BBE1FA;">Harga (Rp)</label>
+                        <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="harga" required>
+                    </div>
+                    <div class="mb-3" style="width: 40%;">
+                        <label for="exampleInputEmail1" class="form-label" style="color: #BBE1FA;">Tanggal rilis</label>
+                        <input type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="tgl" required>
+                    </div>
+                    <div class="mb-3" style="width: 40%;">
+                        <label for="exampleInputEmail1" class="form-label" style="color: #BBE1FA;">Details</label>
+                        <textarea class="form-control" id="exampleInputEmail1" rows="5" name="detail_produk" required></textarea>
+                    </div>
+                    <div class="mb-3" style="width: 40%;">
+                        <label for="exampleInputEmail1" class="form-label" style="color: #BBE1FA;">Nama Vendor</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="vendor" required>
+                    </div>
+                    <div class="mb-3" style="width: 40%;">
+                        <label for="exampleInputEmail1" class="form-label" style="color: #BBE1FA;">Gambar</label>
+                        <input type="file" class="form-control" name="gambar" required>
+                    </div>
+                    <div class="mb-3" style="width: 40%;">
+                        <label for="exampleInputPassword1" class="form-label" style="color: #BBE1FA;">Diskon (%)</label>
+                        <input type="number" class="form-control" id="exampleFormControlInput1" name="diskon" required>
+                    </div>
+                    <div class="mb-3" style="width: 40%;">
+                      <label for="exampleInputPassword1" class="form-label" style="color: #BBE1FA;">Kategori</label>
+                      <select class="form-control" id="exampleFormControlInput1" name="kategori" required>
+                        <option value="1801">Mouse</option>
+                        <option value="1802">Keyboard</option>
+                        <option value="1803">Headset</option>
+                        <option value="1804">Mousepad</option>
+                      </select>
+                  </div>
+                    <button type="submit" class="btn btn-primary" name="insertproduk">Tambah Produk</button>
+                </form>
+                <br>
+            </div>
+
+            <div style="display: inline-block; ">
+              <h3 style="color: #BBE1FA;">List Produk</h3>
+              <!-- TABEL1 -->
+              <table class="table table-light table-hover">
+                <thead>
+                  <tr>
+                    <td>Id</td>
+                    <td>Nama</td>
+                    <td>Harga</td>
+                    <td>Release</td>
+                    <td>Vendor</td>
+                    <td>Diskon</td>
+                    <td>Kategori</td>
+                    <td>Aksi</td>
+                  </tr>
+                </thead>
+                
+                <tr>
+                  <!-- DATA YG AKAN DIGANTI -->
+                  DATA_TABEL
+                </tr>
+        
+              </table>
+            </div>
+    
+        </div>
+
+    
+</body>

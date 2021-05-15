@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+    font-size: 50px;
+    color: #263859;
+}
+
+h2{
+    color: #263859;
+}
+
+p{
+    margin: 10px;
+    padding: 0px;
+}
+
+.mid{
+    font-size: 20px;
+    text-align: center;
+}
+
+.row{
+    width: 100%;
+}
+
+#kiri{
+    /* background-color: aquamarine; */
+    background-image: url(../img/regis.png);
+    background-size: auto;
+    /* background-repeat: no-repeat; */
+    /* width: 100%; */
+    height: 760px;
+}
+
+.kanan{
+    text-align: right;
+}
+
+.but{
+    margin-right: 30px;
+    /* padding: 0px 10px ; */
+    border: 3px solid lightblue;
+}
+
+form{
+    margin: 30px;
+    /* margin-top: 140px; */
+}
+
+a{
+    margin-left: 350px;;
+}

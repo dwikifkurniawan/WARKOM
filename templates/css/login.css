@@ -1,0 +1,64 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    margin: 10px;
+    padding: 20px;
+    font-size: 40px;
+    color: azure;
+}
+
+h2{
+    color: #263859;
+}
+
+h5{
+    color: #263859;
+}
+
+p{
+    /* margin-top: 30px; */
+    padding: 0px;
+    color: #263859;
+}
+
+.bawah{
+    margin-top: 20px;
+}
+
+.col{
+    height: 80%;
+}
+
+.row{
+    width: 100%;
+}
+
+#gambar{
+    margin-top: 50px;
+    margin-left: 40px;
+}
+
+#kiri{
+    /* background-color: aquamarine; */
+    background-image: url(../img/loginbg.png);
+    /* background-size: auto; */
+    /* background-repeat: no-repeat; */
+    /* width: 100%; */
+    height: 760px;
+    /* margin-top: -50px; */
+}
+
+.but{
+    margin-top: 60px;
+    margin-right: 55px;
+    padding: 0px 10px ;
+    border: 3px solid lightblue;
+}
+
+form{
+    margin: 50px;
+    margin-top: 110px;
+}

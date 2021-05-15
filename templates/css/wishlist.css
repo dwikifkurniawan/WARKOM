@@ -1,0 +1,306 @@
+/* color1: #3D4C55  bg
+color2: #2B3D58     birutua
+color3: #BBE1FA     birumuda
+color4: #F0ECE2     agakputih
+navbar ubuntu
+sisanya poppin
+footer nunito
+*/  
+
+
+
+body{
+    background-color: #3D4C55;
+    font-family: Poppins;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+.header {
+    background-color: #3D4C55;
+    transition: all 0.5s;
+    z-index: 997;
+    padding: 20px 0;
+}
+  
+.header.header-scrolled {
+    background: #fff;
+    padding: 15px 0;
+    box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
+}
+  
+.header .logo {
+    line-height: 0;
+}
+  
+.header .logo img {
+    max-height: 40px;
+    margin-right: 6px;
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/**
+* Desktop Navigation 
+*/
+.navbar {
+    padding: 0;
+    font-family: Ubuntu;
+}
+  
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+  
+.navbar li {
+    position: relative;
+}
+  
+.navbar a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0 10px 30px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #d4d9dd;
+    white-space: nowrap;
+    transition: 0.3s;
+}
+  
+.navbar a i {
+    font-size: 12px;
+    line-height: 0;
+    margin-left: 5px;
+}
+  
+.navbar a:hover, .navbar .active, .navbar li:hover > a {
+    color: white;
+}
+  
+@media (max-width: 1366px) {
+    .navbar .dropdown .dropdown ul {
+      left: -90%;
+    }
+    .navbar .dropdown .dropdown:hover > ul {
+      left: -100%;
+    }
+}
+
+h1{
+    color: #BBE1FA;
+}
+
+/*--------------------------------------------------------------
+# Hero
+--------------------------------------------------------------*/
+.hero{
+    padding-top: 90px;
+}
+.crop{
+    height: 80vh;
+    overflow: hidden;
+}
+
+.crop img {
+    margin: -130px 0 -50px 0;
+}
+
+
+/*--------------------------------------------------------------
+# Sections
+--------------------------------------------------------------*/
+section {
+    padding: 60px 0;
+    overflow: hidden;
+}
+  
+.section-header {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.section-header2 {
+    text-align: left;
+    padding: 40px 0;
+}
+  
+.section-header h2 {
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin: 0;
+    color: #BBE1FA;
+}
+
+.section-header h3 {
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin: 0;
+    color: #2B3D58;
+}
+
+.section-header2 h2 {
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin: 0;
+    color: #BBE1FA;
+}
+
+@media (max-width: 768px) {
+    .section-header p {
+      font-size: 28px;
+      line-height: 32px;
+    }
+}
+
+
+/*--------------------------------------------------------------
+# Main
+--------------------------------------------------------------*/
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .box {
+    margin-left: -4vw;
+    width: 30vw;
+    height: 40vh;
+    padding: 20px 20px;
+    background: transparent;
+    /* box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08); */
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s;
+  }
+
+  .main .box:hover {
+    transform: scale(1.1);
+    /* box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1); */
+  }
+  
+  .main h3 {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .main .price {
+    font-size: 36px;
+    color: #444444;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .main .price sup {
+    font-size: 20px;
+    top: -15px;
+    left: -3px;
+  }
+  
+  .main .price span {
+    color: #bababa;
+    font-size: 16px;
+    font-weight: 300;
+  }
+  
+  .main img {
+    padding: 30px 40px;
+  }
+
+  .main a {
+      text-decoration: none;
+  }
+
+  .main p {
+    padding: 0;
+    color: #444444;
+    text-align: center;
+    /* line-height: 26px; */
+    font-size: 16px;
+    /* margin-bottom: 25px; */
+  }
+  
+  .main ul {
+    padding: 0;
+    list-style: none;
+    color: #444444;
+    text-align: center;
+    line-height: 26px;
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+  
+  .main ul li {
+    padding-bottom: 10px;
+  }
+  
+  .main ul .na {
+    color: #ccc;
+    text-decoration: line-through;
+  }
+  
+  .main .btn-buy {
+    display: inline-block;
+    padding: 8px 40px 10px 40px;
+    border-radius: 50px;
+    color: #3D4C55;
+    transition: none;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    transition: 0.3s;
+    border: 1px solid #3D4C55;
+  }
+  
+  .main .btn-buy:hover {
+    background: #3D4C55;
+    color: #fff;
+  }
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------
+*/
+
+.footer{
+    background-color: #394248;
+    padding: 25px;
+}
+
+.footer a{
+    color: #F0ECE2;
+}
+
+.footer p{
+    font-size: 13px;
+}
+
+.footer1{
+    background-color: #F0ECE2;
+    margin: 0;
+    padding: 0;
+}
+
+.footer1 p{
+    color: #394248;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.kanan{
+    margin-left: 1000px;
+    margin-top: -60px;
+}

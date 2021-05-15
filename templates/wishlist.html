@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- icon -->
+    <link href="templates/img/logoatas.png" rel="icon">
+
+    <!-- css -->
+    <link rel="stylesheet" href="templates/css/bootstrap.min.css">
+    <link rel="stylesheet" href="templates/css/style.css">
+    <!-- <link rel="stylesheet" href="templates/css/wishlist.css"> -->
+    
+
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="templates/js/bootstrap.min.js"></script>
+
+    <title>Warkom</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header" class="header fixed-top shadow p-3 mb-5 rounded">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+            <a href="index.php" class="logo d-flex align-items-center">
+              <img src="templates/img/logo.png" alt="">
+            </a>
+      
+            <nav id="navbar" class="navbar">
+              <ul>
+                <li><a class="nav-link scrollto" href="index.php">Home</a></li>
+                <li><a class="nav-link scrollto" href="about.php">About</a></li>
+                <li><a class="nav-link scrollto" href="index.php#contact">Contact</a></li>
+                
+                <li><a class="nav-link scrollto">
+                  <form method="post" action="search.php" class="d-flex">
+                    <input class="form-control me-2" type="search" name="search" placeholder="Search" aria-label="Search">
+                    <input class="btn btn-outline-success" type="submit" value="Search"/>
+                  </form>
+                </a></li>
+                <li><a class="nav-link scrollto" href="keranjang.php"><img src="templates/img/cart.png" alt="" width="60%" height="60%"></a></li>
+                <li><a class="nav-link scrollto" href="wishlist.php"><img src="templates/img/wishlist.png" alt="" width="60%" height="60%"></a></li>
+                <li>DATA_LOGIN</li>
+              </ul>
+              <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
+      
+        </div>
+    </header>
+    <!-- Header -->
+
+    <section id="main" class="main">
+        <div class="container">
+            <header class="section-header">
+                <h2>Wishlist Barang-Barang Mu</h2>
+            </header>
+            DATA_SORT
+        </div>
+
+        <br>
+        <br>
+
+        <div class="container" data-aos="fade-up">
+          <div class="row gy-4" data-aos="fade-left">
+              DATA_PRODUKF
+          </div>
+    </section>
+
+    <section id="footer" class="footer">
+      <div class="container container-fluid footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-2">
+              <a href="">Mouse</a>
+            </div>
+            <div class="col-lg-2">
+              <a href="">Register</a>
+            </div>
+            <div class="col-lg-2">
+              <a href="">Instagram</a>
+            </div>
+            <!-- <div class="col-lg-6">
+              <p>MK is a new gaming gear with a big and cool best gaming equipments with lowest price and free shipping</p>
+            </div> -->
+          </div>
+
+          <div class="row">
+            <div class="col-lg-2">
+              <a href="">Keyboard</a>
+            </div>
+            <div class="col-lg-2">
+              <a href="">Login</a>
+            </div>
+            <div class="col-lg-2">
+              <a href="">Twitter</a>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-2">
+              <a href="">Headset</a>
+            </div>
+            <div class="col-lg-2">
+              <a href="">About</a>
+            </div>
+            <div class="col-lg-2">
+              <a href="">Facebook</a>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-2">
+              <a href="">Speaker</a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-2">
+              <a href="">Hardisk</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="footer1" class="footer1">
+      <div class="container container-fluid">
+        <div class="container">
+          <div class="row">
+            <p>Copyright &copy; 2021. All rights registed.</p>
+            <!-- <img src="templates/img/footer.png" alt="" class="kanan"> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+</body>
+</html>
