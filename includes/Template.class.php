@@ -1,9 +1,5 @@
 <?php
 
-/******************************************
-PRAKTIKUM RPL
- ******************************************/
-
 class Template{
 	var $filename = ''; // handle file
 	var $content = ''; // handle isi file

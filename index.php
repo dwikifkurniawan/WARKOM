@@ -22,11 +22,14 @@ else{
 }
 
 
-if($_SESSION['status_admin'] == 1){
-    echo("<script>
-		window.location.href = 'admin.php';
-		</script>");
+if(isset($_SESSION['status_admin'])){
+    if($_SESSION['status_admin'] == 1){
+        echo("<script>
+            window.location.href = 'admin.php';
+            </script>");
+    }
 }
+
 
 $oproduk->getProdukFeatured();
 $prodf = null;

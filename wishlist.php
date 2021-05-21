@@ -38,10 +38,10 @@ if($_SESSION['status_admin'] == 1){
 
 $sort = null;
 $sort .=
-'<h3 style="color: #BBE1FA;">Urutkan</h3>
+'<h3 style="color: #BBE1FA;">Seleksi</h3>
 <div class="row">
   <div class="col-lg-2">
-    <a href="wishlist.php?sort=1" class="btn btn-outline-light urutkan">Rekomendasi</a>
+    <a href="wishlist.php?sort=1" class="btn btn-outline-light urutkan">Prediksi</a>
   </div>
 
   <div class="col-lg-2">
@@ -49,7 +49,7 @@ $sort .=
   </div>
   
   <div class="col-lg-2">
-    <a href="wishlist.php" class="btn btn-outline-danger urutkan">Hapus Urutan</a>
+    <a href="wishlist.php" class="btn btn-outline-danger urutkan">Hapus Seleksi</a>
   </div>
 </div>';
 

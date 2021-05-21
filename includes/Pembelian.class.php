@@ -35,7 +35,7 @@ class Pembelian extends DB{
 	function getPembelianKonfirm($id_cust){
 		// Query mysql select data ke Pembelian
 		$keranjang = 0;
-		$query = "SELECT * FROM pembelian WHERE status_keranjang=$keranjang AND pembelian_id_customer=$id_cust AND status_pembelian='Menunggu Konfirmasi'";
+		$query = "SELECT * FROM pembelian WHERE status_keranjang=$keranjang AND pembelian_id_customer=$id_cust AND status_pembelian='Menunggu Konfirmasi' AND pembelian_id_produk <> 2000";
 
 		// Mengeksekusi query
 		return $this->execute($query);
